@@ -14,7 +14,7 @@
 
 
   ## Description
-  This is a back end application that allows the user to view all products, categories, tags, and even make necessary updates on the respective products, categories, and tags. If the user is able to easily follow the prompts to select the appropriate action, updating the respective employee, role, and department. 
+  This is a back end application that allows the user to view all products, categories, tags, and even make necessary updates on the respective products, categories, and tags. The application gives the user the ability to create a product, category, and/or tag, post it, and delete it. 
   
   Please see the Usage section as a guide on how to use the Employee Tracker application.
 
@@ -28,21 +28,20 @@
   ### Sourcing The Databases
   1. Once you are in the correct file path of the cloned files, you will need to first source the databases. This will tell the application where to source the data from. To source the data, type 'mysql -u root -p'. You will be prompted to enter in a password.
   2. When the user has entered in their password, first source the schema database by typing 'source db/schema.sql' and hit enter.
-  3. After sourcing the schema database, type 'source db/seeds.sql' and hit enter. From here, you are done sourcing the databases. 
-  4. Type 'quit' and hit enter to exit out of mysql. 
+  3. After sourcing the schema database, type 'quit' and hit enter. From here, you will need to source the seeds. 
+  4. Type 'npm run seed' and hit enter. You will see in the terminal that all of the seeds have been synced.
   5. You are then brought back to the file path. 
 
   ### Running And Using The Application
   1. After sourcing the databases, you are now free to run the application. 
-  2. Type 'node index.js' in your command-line and hit enter.
-  3. The application is now running, and you will be presented with a list of prompts.
-  4. To scroll through the list of prompts, use the up and down arrow keys to scroll through the options. The current option that are you are "hovering" over will be highlighted a different color.
-  5. Once you have decided on an option, highlight it with your arrow key and hit enter. 
-  6. If you have selected a 'View all' option, you will be presented with a table displaying the data that you chose.
-  7. If you have selected a 'Add' or 'Update' option, you will be prompted to enter in additional information. 
-  8. After you have made all of your necessary changes, and would like to stop using the application, simply highlight the 'Exit' option and hit enter. You will then be directed back to the file path.
+  2. Type 'npm start' in your command-line and hit enter.
+  3. The application is now running and listening.
+  4. Go to the Insomnia application.
+  5. If the user is wanting to see all categories, products, or tags, the "GET" method will need to be used. The http path to enter in the address bar will be "http://localhost:3001/api/'route'" Be sure to replace 'route' with the data that you would like to see.
+  6. If user only wants to see a certain category, the respective ID will need to be entered into the http path. EX: "http://localhost:3001/api/categories/1". This will also apply to both products and tags.
+  7. 
+  8. 
   
- Use the up and down arrow keys to scroll through the options and hit enter once you have highlighted the action that you would like to take.
 
  ### Please click on the link below to see how to use this application.
 
