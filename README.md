@@ -39,8 +39,9 @@
   4. Go to the Insomnia application.
   5. If the user is wanting to see all categories, products, or tags, the "GET" method will need to be used. The http path to enter in the address bar will be "http://localhost:3001/api/'route'" Be sure to replace 'route' with the data that you would like to see.
   6. If user only wants to see a certain category, the respective ID will need to be entered into the http path. EX: "http://localhost:3001/api/categories/1". This will also apply to both products and tags.
-  7. 
-  8. 
+  7. If user wants to post for one of the directories, the "POST" method will need to be used. The user will need to be in the respective route. From here, the user will need to enter in the appropriate JSON information in the body. Once you have submitted you will receive a new ID number.
+  8. To use the "PUT" method, then the user will be able to enter in the JSON information in the body and submit it to the new ID number created using the appropriate http path. 
+  9. If the user will like to delete a certain item, use the "DELETE" method, go to the appropriate http path and ID number, and submit delete. 
   
 
  ### Please click on the link below to see how to use this application.
